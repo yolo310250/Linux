@@ -22,6 +22,8 @@ yum -y install zabbix-server-mysql zabbix-web-mysql zabbix-agent
 
 zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql (將初始資料表匯入 zabbix 資料庫)
 ```
+## 修改參數與啟動
+```
 cp /etc/zabbix/zabbix_server.conf /etc/zabbix/zabbix_server.conf.bak
 
 vim /etc/zabbix/zabbix_server.conf 
@@ -45,3 +47,11 @@ systemctl start httpd
 systemctl start zabbix-agent
 
 systemctl enable zabbix-agent
+```
+## 進入zabbix網頁
+192.168.56.109/zabbix
+輸入帳號:admin
+輸入密碼:zabbix
+
+![github]()
+selinux一定要關
