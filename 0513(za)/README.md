@@ -53,5 +53,5 @@ systemctl enable zabbix-agent
 輸入帳號:admin
 輸入密碼:zabbix
 
-![github](https://github.com/yolo310250/Linux/blob/master/Zabbix/za.PNG "zabbix管理頁面")
+![github](za.PNG "zabbix管理頁面")
 selinux一定要關
