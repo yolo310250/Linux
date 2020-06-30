@@ -43,6 +43,6 @@ net.ipv4.ip_forward = 1
 [root@centos7 user]# sysctl -p
 net.ipv4.ip_forward = 1
 ```
-![V4](V4.PNG)
+![V4](v4.PNG)
 
 
