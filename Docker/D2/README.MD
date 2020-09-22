@@ -13,4 +13,6 @@
   * d: 背景執行
 * `docker stop <ContainerID>`
 * `dokcer start <ContainerID>`
-* `docker ps`
+* `docker ps`:列出容器
+  * `docker ps -a`:列出所有容器，包括未運行的
+  
