@@ -13,3 +13,4 @@
   * d: 背景執行
 * `docker stop <ContainerID>`
 * `dokcer start <ContainerID>`
+* `docker ps`
