@@ -15,4 +15,14 @@
 * `dokcer start <ContainerID>`
 * `docker ps`:列出容器
   * `docker ps -a`:列出所有容器，包括未運行的
-  
+* `docker rm <containerID>`
+  * `docker rmi`:刪除images檔
+  * `-f`:強制刪除
+  * `docker rm -f $(docker ps -a -q)`:刪除所有container
+* `docker tag <containerID> 帳號/httpd:latest`
+  * `docker login`
+  * `docker push 帳號/httpd:latest`
+
+![1](1.PNG)
+[參考範例](https://ithelp.ithome.com.tw/articles/10191139)
+
