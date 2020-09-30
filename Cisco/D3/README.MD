@@ -21,7 +21,7 @@ no shutdown
 ctrl + z
 show ip interface brief 顯示路由器介面設定的資訊
 ```
-設定完成，R1便可ping到R2
+設定完成，R1便可ping到R2  
 ![1](1.PNG)
 
 `no ip domain lookup`:關閉DNS查詢功能   
@@ -41,6 +41,7 @@ transport input telnet
 
 ![2](2.PNG)
 
+
 **VPC實驗**
 ![3](3.PNG)
 - R2
@@ -54,5 +55,6 @@ dns-server 8.8.8.8
 `
 ip dhcp
 `   
-成功後VPC可PING到12.1.1.2及192.168.1.1
+成功後VPC可PING到12.1.1.2及192.168.1.1  
+
 ![4](4.PNG)
