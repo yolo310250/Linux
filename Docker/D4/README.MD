@@ -15,7 +15,7 @@
         - username:admin
         - password:hb12345
     - `docker tag 685 192.168.56.117/library/busybox:latest`
-    - `docker push 685 192.168.56.117/library/busybox:latest`
+    - `docker push 192.168.56.117/library/busybox:latest`
 
 ![2](2.PNG)
 ![3](3.PNG)
