@@ -1,6 +1,6 @@
 ## 11/18上課
 
-![1](eigrp.PNG)
+![0](eigrp.PNG)
 - Successor可理解為best path，圖中C節點為successor
 - Feasible successor AD必須小於FD
 - 不等價負載均衡:可讓大部分走最好路徑，小部分走其他路徑 **variance*FD要大於其他路徑的FD** 
