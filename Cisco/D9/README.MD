@@ -11,10 +11,13 @@
 |   |C | 20 | 10 |
 |   |D | 45 | 25 |
 
-所有規則都無符合，封包會drop
-黑名單模式下，最後一筆要加上permit any
 
-簡易防火牆
+- ACL(Access Control List)
+    - 簡易防火牆
+    - 資料分類  
+
+**所有規則都無符合，封包會drop，黑名單模式下，最後一筆要加上permit any**
+
 設定規則
 規則要在何接口，指定方向
 
@@ -30,3 +33,5 @@ ip access-group 1 in
 ```
 設定完成後能夠阻擋來自1.1.1.1封包
 ![2](2.PNG)
+
+[ACL介紹]("http://www.tsnien.idv.tw/Manager_WebBook/chap9/9-5%20%E5%B0%81%E5%8C%85%E9%81%8E%E6%BF%BE%E8%A1%A8%20%E2%80%93%20ACL.html")
