@@ -10,3 +10,8 @@
 
 進去pod裡的容器
 `kubetl exec myweb-4655fdf -it -- bash`
+
+cp httpd
+cp ingress
+kubectl apply -f httpd2.yaml
+kubectl apply -f ingress-httpd2.yaml
