@@ -144,5 +144,11 @@ nfs:
     ![](7.PNG)
     
     **成功**
-    
+
     ![](8.PNG)
+
+- 參考資料
+
+[Kubernetes+Prometheus+Grafana部署笔记-KaliArch-51CTO博客]("https://blog.51cto.com/kaliarch/2160569")
+
+[實作 Dockerfile + flask 教學 (附GitHub完整程式) | Max行銷誌]("https://www.maxlist.xyz/2020/01/11/docker-flask/")
