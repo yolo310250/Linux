@@ -1,8 +1,8 @@
 ## 第三周上課
 容器只要沒有持續執行的程式，容器便會結束
 
-`docker info`:docker相關資訊
-`docker attach`:重新連回容器
+`docker info`: docker相關資訊
+`docker attach`: 重新連回容器
 
 - `docker pull gcc`
 

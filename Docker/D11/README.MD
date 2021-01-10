@@ -56,6 +56,6 @@ vm2、3
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
-nodeport 對外的
-port docker
+nodeport 對外的  
+port docker  
 targetport 內網

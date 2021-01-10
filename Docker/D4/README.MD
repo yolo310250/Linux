@@ -9,7 +9,7 @@
 [參考網頁](https://kknews.cc/zh-tw/code/5n9poj6.html)
 ![1](1.PNG)
 
-- EX  
+- EX image檔推上harbor
     - `docker pull busybox`
     - `docker login 192.168.56.117`
         - username:admin

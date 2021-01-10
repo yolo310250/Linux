@@ -12,7 +12,7 @@ metadata:
   name: kubernetes-dashboard
   namespace: kube-system
 spec:
-  (`)type: NodePort(`)
+  type: NodePort
   ports:
     - port: 443
       targetPort: 8443
@@ -58,3 +58,29 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 - 進入https://192.168.56.117:30310/#!/login
 
 ![](1.PNG)
+
+### Helm 
+[helm的介紹]("https://cwhu.medium.com/kubernetes-helm-chart-tutorial-fbdad62a8b61")  
+
+**安裝**
+```
+wget https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
+
+tar xvfz helm-v3.4.2-linux-amd64.tar.gz
+
+cd linux-amd64/
+
+mv helm /usr/local/bin
+
+helm version
+```
+**指令**
+```
+helm repo list: 顯示資料庫列表
+
+helm repo add aliyun https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts: 增加資料庫
+
+helm repo remove aliyun: 刪除資料庫
+
+helm search repo mysql: 查詢資料庫
+```
