@@ -161,3 +161,70 @@ no auto-summary
     permit ip 192.168.20.0 0.0.0.255 192.168.10.0 0.0.0.255
     exit
     ```
+- 設定IKE phase 1
+    - R1
+    ```
+    crypto isakmp policy 1
+    encryption aes
+    hash md5
+    authentication pre-share
+    group 2
+    lifetime 30000
+    ```
+    - R2
+    ```
+    crypto isakmp policy 1
+    encryption aes
+    hash md5
+    authentication pre-share
+    group 2
+    lifetime 30000
+    ```
+- 設定IKE phase 2
+    - R1
+    ```
+    crypto ipsec transform-set TS esp-3des ah-sha-hmac
+    ```
+    - R2
+    ```
+    crypto ipsec transform-set TS esp-3des ah-sha-hmac
+    ```
+- 設定pre-share key
+    - R1
+    ```
+    crypto isakmp key 6 ccie address 10.0.23.2
+    ```
+    - R3
+    ```
+    crypto isakmp key 6 ccie address 10.0.13.1
+    ```
+- 定義 Crypto Map
+    - R1
+    ```
+    crypto map CMAP 1 ipsec-isakmp
+    set peer 10.0.20.3
+    set transform-set TS
+    match address VPN-Traffic
+    exit
+    int e0/0
+    crypto map CMAP
+    ```
+    - R2
+    ```
+    crypto map CMAP 1 ipsec-isakmp
+    set peer 10.0.20.3
+    set transform-set TS
+    match address VPN-Traffic
+    exit
+    int e0/0
+    crypto map CMAP
+    ```
+
+    **測試**
+
+    ![](3.PNG)
+
+
+**參考資料**
+[Generic Routing Encapsulation (GRE) 通用路由封裝](https://www.jannet.hk/zh-Hant/post/generic-routing-encapsulation-gre/)
+[Internet Protocol Security (IPsec) 網際網路安全協定](https://www.jannet.hk/zh-Hant/post/internet-protocol-security-ipsec/)
