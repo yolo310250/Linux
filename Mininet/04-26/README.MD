@@ -1,0 +1,4 @@
+- Group Table 
+    - load balance (select)
+    - fault tolerance 
+    - mix 1 and 2
