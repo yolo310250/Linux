@@ -65,3 +65,11 @@
 - p4的broadcast與multicast
 
 ![](0.jpg)
+
+- h1 send h2、h3 receive
+
+![](6.PNG)
+
+- 同理，h3 send h1、h2 receive
+
+![](7.PNG)
