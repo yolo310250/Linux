@@ -58,4 +58,10 @@
 - SENT-TO-CPU2實驗  
 
 ![](4.PNG)
+
 ![](5.PNG)
+
+### 範例
+- p4的broadcast與multicast
+
+![](0.jpg)
