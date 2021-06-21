@@ -2,7 +2,7 @@
 
 ![](1.jpg)
 
-- Q1
+### Q1
     - p4app.json 新增節點
     ```
     "links": [["h1", "s1"], ["h2", "s1"], ["h3", "s1"], ["h4", "s1"]],
@@ -61,6 +61,40 @@
 
 meter 調節傳輸速度
 
-- test-meter
+### test-meter
+
+![](2.jpg)
 
 ![](1.PNG)
+
+
+
+### test-recirculate
+
+![](3.jpg)
+
+- h1 
+    - `ping -c 1 10.0.2.1 -Q 12`  `-Q`:用來設定封包tos欄位
+- h2
+    - `wireshark`
+
+![](4.PNG)
+
+- 1到10之間設為0，大於10固定不變
+
+
+### Multipath transmission
+
+![](4.jpg)
+
+- 先用singlepath執行一次
+
+![](5.PNG)
+
+#### 可以看到bw大概在500左右
+
+- 再用multipath執行
+
+![](6.PNG)
+
+#### 增加到將近1000
